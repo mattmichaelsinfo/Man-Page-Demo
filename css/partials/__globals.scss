@@ -1,0 +1,80 @@
+/**
+
+ Real Self Quiz: Matt Michaels
+ Time spent: 2 hours + 36 minutes
+
+ "Interesting quiz, look forward to speaking more with the company!"
+
+ matt@mattmichaels.info
+ 412-860-5048
+ http://mattmichaels.info
+
+**/
+
+
+/* Globals
+*************************************************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, 
+body { 
+  font: 17px/1.4 Courier, 'Courier New', monospace;
+}
+
+body {
+  background: #fff;
+  padding: 2% 20%;
+}
+
+
+// Header
+h1 {
+  margin-top: 150px;
+  font-size: 36px;
+  margin: 100px auto 5px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0px auto 25px;
+}
+
+
+// Summary
+.overview {
+  font-size: 13px;
+  MARGIN-BOTTOM: 25px;
+
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+.buffer {
+  // Basic mixin's
+  @include border-radius(3px);
+  @include flexbox();
+  @include flex-flow(row wrap);
+
+  // Terminal window styling
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  margin: 0 auto;
+  padding: 5px;
+
+  .word {
+    // Where flexbox is doing the positioning
+    @include flex(1 1 auto);
+    text-align: justify;
+
+    &:last-child {
+      // Where flexbox handles meeting that right margin
+      @include flex(0);
+    }
+  }
+}

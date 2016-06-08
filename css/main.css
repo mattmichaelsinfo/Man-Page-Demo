@@ -1,0 +1,113 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*** MIXIN: Flexbox ************************************************************/
+/* Vertical Align Mixin */
+/* Clearfix */
+.clearfix {
+  display: block;
+  clear: both; }
+
+/** Media Query Mixins, Breakpoints **/
+/** Media Query Mixins, Breakpoints **/
+/**
+
+ Real Self Quiz: Matt Michaels
+ Time spent: 2 hours + 36 minutes
+
+ "Interesting quiz, look forward to speaking more with the company!"
+
+ matt@mattmichaels.info
+ 412-860-5048
+ http://mattmichaels.info
+
+**/
+/* Globals
+*************************************************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+html,
+body {
+  font: 17px/1.4 Courier, 'Courier New', monospace; }
+
+body {
+  background: #fff;
+  padding: 2% 20%; }
+
+h1 {
+  margin-top: 150px;
+  font-size: 36px;
+  margin: 100px auto 5px; }
+
+h2 {
+  font-size: 24px;
+  margin: 0px auto 25px; }
+
+.overview {
+  font-size: 13px;
+  MARGIN-BOTTOM: 25px; }
+  .overview p {
+    margin-bottom: 15px; }
+
+.buffer {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /* Combination of flex-direction AND flex-wrap, default is row AND nowrap */
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  margin: 0 auto;
+  padding: 5px; }
+  .buffer .word {
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: justify; }
+    .buffer .word:last-child {
+      -webkit-box-flex: 0;
+      -moz-box-flex: 0;
+      -webkit-flex: 0;
+      -ms-flex: 0;
+      flex: 0; }
+
+/*# sourceMappingURL=main.css.map */
